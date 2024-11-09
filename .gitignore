@@ -4,3 +4,5 @@
 
 /EmployeesManagementSystem/bin/Debug/net8.0
 /EmployeesManagementSystem/obj/Debug/net8.0
+/EmployeesManagementSystem/.vs
+/.gitignore
