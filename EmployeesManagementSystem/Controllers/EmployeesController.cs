@@ -54,8 +54,11 @@ namespace EmployeesManagementSystem.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,EmployeeNumber,FirstName,MiddleName,LastName,PhoneNumber,EmailAddress,Country,DateOfBirth,Address,Department,Designation,CreatedById,CreatedOn,ModifiedById,ModifiedOn")] Employee employee)
+        public async Task<IActionResult> Create(Employee employee)
         {
+            employee.CreatedById = "Excellent";
+            employee.CreatedOn = DateTime.Now;
+
             if (ModelState.IsValid)
             {
                 _context.Add(employee);
