@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "mssql2": {
+      "serviceConnectorResourceId": "/subscriptions/[parameters('subscriptionId')]/resourcegroups/[parameters('resourceGroupName')]/providers/Microsoft.Web/sites/EmployeesManagementSystem20241112125703/providers/Microsoft.ServiceLinker/linkers/ConnectionStringsLocalConnection_87BCEC60B0",
+      "secretStore": "AzureAppSettings",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourcegroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/ems-db-newdbserver/databases/EMS_DB_NEW",
+      "type": "mssql.azure",
+      "connectionId": "ConnectionStrings:LocalConnection",
+      "dynamicId": null
+    },
+    "mssql1": {
+      "ignored": "true",
+      "type": "mssql",
+      "connectionId": "ConnectionStrings:DefaultConnection"
+    }
+  }
+}

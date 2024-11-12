@@ -12,5 +12,6 @@
     <WebStackScaffolding_DbContextTypeFullName>EmployeesManagementSystem.Data.ApplicationDbContext</WebStackScaffolding_DbContextTypeFullName>
     <WebStackScaffolding_IsAsyncSelected>False</WebStackScaffolding_IsAsyncSelected>
     <WebStackScaffolding_IsViewGenerationSelected>True</WebStackScaffolding_IsViewGenerationSelected>
+    <NameOfLastUsedPublishProfile>C:\___EMS_MVC\EmployeesManagementSystem\Properties\PublishProfiles\EmployeesManagementSystem20241112125703 - Web Deploy.pubxml</NameOfLastUsedPublishProfile>
   </PropertyGroup>
 </Project>
