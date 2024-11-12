@@ -5,7 +5,7 @@
 }
 
 <p>
-    <a asp-action="Create">Add New Employee</a>
+    <a asp-action="Create" class="btn btn-info" > <i class="fa fa-plus"></i> Add New Employee</a>
 </p>
 <!-- /.card -->
 <div class="card">
@@ -35,34 +35,37 @@
                     <th>
                         @Html.DisplayNameFor(model => model.EmailAddress)
                     </th>
+                    <!--
                     <th>
-                        @Html.DisplayNameFor(model => model.Country)
+                        Html.DisplayNameFor(model => model.Country)
+                    </th>
+                    
+                    <th>
+                        Html.DisplayNameFor(model => model.DateOfBirth)
                     </th>
                     <th>
-                        @Html.DisplayNameFor(model => model.DateOfBirth)
+                        Html.DisplayNameFor(model => model.Address)
                     </th>
                     <th>
-                        @Html.DisplayNameFor(model => model.Address)
+                        Html.DisplayNameFor(model => model.Department)
                     </th>
                     <th>
-                        @Html.DisplayNameFor(model => model.Department)
+                        Html.DisplayNameFor(model => model.Designation)
                     </th>
                     <th>
-                        @Html.DisplayNameFor(model => model.Designation)
+                        Html.DisplayNameFor(model => model.CreatedById)
                     </th>
                     <th>
-                        @Html.DisplayNameFor(model => model.CreatedById)
+                        Html.DisplayNameFor(model => model.CreatedOn)
                     </th>
                     <th>
-                        @Html.DisplayNameFor(model => model.CreatedOn)
+                        Html.DisplayNameFor(model => model.ModifiedById)
                     </th>
                     <th>
-                        @Html.DisplayNameFor(model => model.ModifiedById)
-                    </th>
-                    <th>
-                        @Html.DisplayNameFor(model => model.ModifiedOn)
+                        Html.DisplayNameFor(model => model.ModifiedOn)
                     </th>
                     <th></th>
+                    -->
                 </tr>
             </thead>
             <tbody>
@@ -86,37 +89,41 @@
                     <td>
                         @Html.DisplayFor(modelItem => item.EmailAddress)
                     </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Country)
+                    <!-- <td>
+                        Html.DisplayFor(modelItem => item.Country)
                     </td>
                     <td>
-                        @Html.DisplayFor(modelItem => item.DateOfBirth)
+                        Html.DisplayFor(modelItem => item.DateOfBirth)
                     </td>
                     <td>
-                        @Html.DisplayFor(modelItem => item.Address)
+                        Html.DisplayFor(modelItem => item.Address)
+                    </td>
+
+                    <td>
+                        Html.DisplayFor(modelItem => item.CreatedOn)
                     </td>
                     <td>
-                        @Html.DisplayFor(modelItem => item.Department)
+                        Html.DisplayFor(modelItem => item.ModifiedById)
                     </td>
                     <td>
-                        @Html.DisplayFor(modelItem => item.Designation)
+                        Html.DisplayFor(modelItem => item.ModifiedOn)
+                    </td>
+                    -->
+
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-info">
+                            <i class="fa fa-pen"></i> Edit
+                        </a>
                     </td>
                     <td>
-                        @Html.DisplayFor(modelItem => item.CreatedById)
+                        <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-primary">
+                            <i class="fa fa-eye"></i> View
+                        </a>
                     </td>
                     <td>
-                        @Html.DisplayFor(modelItem => item.CreatedOn)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.ModifiedById)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.ModifiedOn)
-                    </td>
-                    <td>
-                        <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                        <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                        <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                        <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">
+                            <i class="fa fa-trash"></i> Delete
+                        </a>
                     </td>
                 </tr>
         }
